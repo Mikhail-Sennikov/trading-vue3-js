@@ -7,9 +7,17 @@ const fs = require('fs')
 
 global.port = '8080'
 
+const VERS = require('../package.json').version
+const BANNER = `/*!
+* TradingVue3.JS - v${VERS}
+* Forked from https://github.com/tvjsx/trading-vue-js
+* Current fork: https://github.com/Mikhail-Sennikov/trading-vue3-js
+* Licensed under MIT
+*/`
+
 module.exports = [{
     entry: {
-        'trading-vue': './src/index.js',
+        'trading-vue': './src/index.ts',
     },
     output: {
         filename: '[name].js',
@@ -17,10 +25,24 @@ module.exports = [{
         libraryTarget: 'umd'
     },
     module: {
-        rules: [{
+        rules: [
+            {
                 test: /\.vue$/,
                 exclude: /node_modules/,
                 loader: 'vue-loader'
+            },
+            {
+                test: /\.ts$/,
+                use: [
+                    {
+                        loader: 'ts-loader',
+                        options: {
+                            appendTsSuffixTo: [/\.vue$/],
+                            transpileOnly: true
+                        }
+                    }
+                ],
+                exclude: /node_modules/
             },
             {
                 test: /\.js$/,
@@ -39,6 +61,9 @@ module.exports = [{
                 loader: 'worker-loader'
             }
         ]
+    },
+    resolve: {
+        extensions: ['.ts', '.js', '.vue', '.json']
     },
     plugins: [
         new VueLoaderPlugin(),
@@ -61,6 +86,9 @@ module.exports = [{
               `
         }),
         new WWPlugin(),
+        new webpack.BannerPlugin({
+            banner: BANNER
+        }),
         {
             apply(compiler) {
                 compiler.hooks.done.tap(this.constructor.name, stats => {
@@ -88,19 +116,16 @@ module.exports = [{
     },
     module: {
         rules: [
-         {
-           test: /\.js/i,
-           use: 'raw-loader',
-         },
-       ]
+            {
+                test: /\.js/i,
+                use: 'raw-loader',
+            },
+        ]
     },
     optimization: {
         runtimeChunk: true,
         minimize: true,
-        minimizer: [new TerserPlugin({
-            include: /\.js$/,
-            sourceMap: false,
-        })]
+        minimizer: [new TerserPlugin()]
     },
     devtool: 'source-map'
 }]

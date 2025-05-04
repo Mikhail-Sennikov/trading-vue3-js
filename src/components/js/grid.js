@@ -5,7 +5,7 @@
 import FrameAnimation from '../../stuff/frame.js'
 import * as Hammer from 'hammerjs'
 import Hamster from 'hamsterjs'
-import Utils from '../../stuff/utils.js'
+import Utils from '../../stuff/utils.ts'
 import math from '../../stuff/math.js'
 
 // Grid is good.

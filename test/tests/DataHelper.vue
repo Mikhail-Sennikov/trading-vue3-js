@@ -20,8 +20,8 @@
 
 <script>
 import TradingVue from '../../src/TradingVue.vue'
-import Utils from '../../src/stuff/utils.js'
-import Const from '../../src/stuff/constants.js'
+import Utils from '../../src/stuff/utils.ts'
+import Const from '../../src/stuff/constants.ts'
 import DataCube from '../../src/helpers/datacube.js'
 import Stream from './DataHelper/stream.js'
 import ScriptOverlay from './Scripts/EMAx6.vue'

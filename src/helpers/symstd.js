@@ -6,7 +6,6 @@ import TS from './script_ts.js'
 import Sampler from './sampler.js'
 import se from './script_engine.js'
 import * as u from './script_utils.js'
-import ScriptStd from './script_std.js'
 
 const SYMTF = /(open|high|low|close|vol)(\d+)(\w*)/gm
 const FNSTD = /(a?tr|kcw?|dmi|sar|supertrend|wpr)(\d+?\w*)\s*\(/gm

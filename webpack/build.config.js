@@ -1,6 +1,5 @@
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const TerserPlugin = require('terser-webpack-plugin')
-
 const webpack = require('webpack')
 const path = require('path')
 const fs = require('fs')
@@ -8,11 +7,10 @@ const fs = require('fs')
 const VERS = require('../package.json').version
 const DATE = new Date().toDateString()
 const BANNER =
-
-`TradingVue.JS - v${VERS} - ${DATE}\n` +
-`    https://github.com/tvjsx/trading-vue-js\n` +
-`    Copyright (c) 2019 C451 Code's All Right;\n` +
-`    Licensed under the MIT license`
+    `TradingVue.JS - v${VERS} - ${DATE}\n` +
+    `    Fork of https://github.com/Mikhail-Sennikov/trading-vue3-js\n` +
+    `    Original Copyright (c) 2019 C451 Code's All Right;\n` +
+    `    Licensed under the MIT license`
 
 if (!fs.existsSync('./src/helpers/tmp/ww$$$.json')) {
     console.log('Web-worker is not compiled. Run `npm run ww`\n')
@@ -21,15 +19,14 @@ if (!fs.existsSync('./src/helpers/tmp/ww$$$.json')) {
 
 let common = {
     entry: {
-        'trading-vue': './src/index.js',
-        'trading-vue.min': './src/index.js',
+        'trading-vue': './src/index.ts',
+        'trading-vue.min': './src/index.ts',
     },
     output: {
         path: path.resolve(__dirname, '../dist'),
         filename: '[name].js',
         library: 'TradingVueJs',
         libraryTarget: 'umd',
-        //libraryExport: "default"
     },
     performance: {
         maxEntrypointSize: 1024000,
@@ -47,6 +44,11 @@ let common = {
                 loader: 'vue-loader'
             },
             {
+                test: /\.ts$/,
+                use: 'ts-loader',
+                exclude: /node_modules/
+            },
+            {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader'
@@ -59,6 +61,9 @@ let common = {
                 ]
             },
         ]
+    },
+    resolve: {
+        extensions: ['.ts', '.js', '.vue', '.json']
     },
     optimization: {
         minimize: true,
@@ -77,7 +82,6 @@ let common = {
         })
     ]
 }
-
 
 module.exports = [
     common

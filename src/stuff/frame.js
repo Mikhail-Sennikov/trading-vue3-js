@@ -2,7 +2,7 @@
 // Annimation frame with a fallback for
 // slower devices
 
-import Utils from './utils.js'
+import Utils from './utils.ts'
 
 export default class FrameAnimation {
     constructor(cb) {

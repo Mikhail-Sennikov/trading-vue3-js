@@ -1,6 +1,6 @@
 // Semi-automatic pin object. For stretching things.
 
-import Utils from '../../stuff/utils.js'
+import Utils from '../../stuff/utils.ts'
 
 export default class Pin {
 

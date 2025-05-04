@@ -1,6 +1,6 @@
 // Data tracker/watcher
 
-import Utils from '../stuff/utils.js'
+import Utils from '../stuff/utils.ts'
 
 export default {
     methods: {

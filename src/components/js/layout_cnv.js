@@ -1,7 +1,7 @@
 // Claculates postions and sizes for candlestick
 // and volume bars for the given subset of data
 
-import Utils from '../../stuff/utils.js'
+import Utils from '../../stuff/utils.ts'
 
 export function layout_cnv(self) {
 

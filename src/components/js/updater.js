@@ -1,7 +1,7 @@
 // Cursor updater: calculates current values for
 // OHLCV and all other indicators
 
-import Utils from '../../stuff/utils.js'
+import Utils from '../../stuff/utils.ts'
 
 class CursorUpdater {
 

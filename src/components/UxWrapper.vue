@@ -35,7 +35,7 @@
 
 <script>
 
-import Utils from '../stuff/utils.js'
+import Utils from '../stuff/utils.ts'
 
 export default {
     name: 'UxWrapper',

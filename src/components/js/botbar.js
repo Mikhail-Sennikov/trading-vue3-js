@@ -1,6 +1,6 @@
 
-import Const from '../../stuff/constants.js'
-import Utils from '../../stuff/utils.js'
+import Const from '../../stuff/constants.ts'
+import Utils from '../../stuff/utils.ts'
 
 const { MINUTE15, MINUTE, HOUR, DAY, WEEK, MONTH, YEAR, MONTHMAP } = Const
 

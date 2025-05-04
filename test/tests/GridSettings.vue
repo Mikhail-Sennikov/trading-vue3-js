@@ -10,7 +10,7 @@
 <script>
 import TradingVue from '../../src/TradingVue.vue'
 import Data from '../data/data_grids.json'
-import Utils from '../../src/stuff/utils.js'
+import Utils from '../../src/stuff/utils.ts'
 
 export default {
     name: 'GridSettings',

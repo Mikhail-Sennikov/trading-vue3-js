@@ -1,6 +1,6 @@
 // Layout functional interface
 
-import Utils from '../../stuff/utils.js'
+import Utils from '../../stuff/utils.ts'
 import math from '../../stuff/math.js'
 
 export default function(self, range) {

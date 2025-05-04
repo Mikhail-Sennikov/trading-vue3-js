@@ -1,5 +1,5 @@
 import * as Hammer from 'hammerjs'
-import Utils from '../../stuff/utils.js'
+import Utils from '../../stuff/utils.ts'
 import math from '../../stuff/math.js'
 
 var PANHEIGHT

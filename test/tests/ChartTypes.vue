@@ -9,7 +9,7 @@
 <script>
 import TradingVue from '../../src/TradingVue.vue'
 import Data from '../data/data_v1_1.json'
-import Utils from '../../src/stuff/utils.js'
+import Utils from '../../src/stuff/utils.ts'
 
 export default {
     name: 'ChartTypes',

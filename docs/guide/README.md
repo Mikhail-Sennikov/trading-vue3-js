@@ -70,7 +70,7 @@ Among other things, you will find the following folders:
 `src` folder contains:
 
 * **App.vue** - VueJs app (our main file)
-* **main.js** -  app entry point,
+* **main.ts** -  app entry point,
 * **index.html** - simple html wrapper
 * **Grin.js** -  example of simple overlay
 

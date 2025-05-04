@@ -35,7 +35,7 @@ If you check the repo with the standard pack https://github.com/tvjsx/tvjs-xp yo
 }
 ```
 
-This repo uses a special building process, so it transforms `x.json` into the corresponding `index.js` files (e.g. https://github.com/tvjsx/tvjs-xp/blob/main/build/settings-win/settings-win.js). You can start developing extension by cloning this repo & following the built-in process. To make a development index and building the library you'll need 2 commands:
+This repo uses a special building process, so it transforms `x.json` into the corresponding `index.ts` files (e.g. https://github.com/tvjsx/tvjs-xp/blob/main/build/settings-win/settings-win.js). You can start developing extension by cloning this repo & following the built-in process. To make a development index and building the library you'll need 2 commands:
 
 ```bash
 npm run compile
@@ -142,7 +142,7 @@ export bus
 
 /* ------ Widget / Component ------ */
 
-import bus from './main.js'
+import bus from './main.ts'
 
 bus.onSomeEvent = () => {}
 bus.send('DifferentEvent', {})

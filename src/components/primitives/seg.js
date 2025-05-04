@@ -2,7 +2,7 @@
 // Draws a segment, adds corresponding collision f-n
 
 import Math2 from '../../stuff/math.js'
-import Utils from '../../stuff/utils.js'
+import Utils from '../../stuff/utils.ts'
 
 export default class Seg {
 

@@ -1,5 +1,5 @@
-import Const from '../../stuff/constants.js'
-import Utils from '../../stuff/utils.js'
+import Const from '../../stuff/constants.ts'
+import Utils from '../../stuff/utils.ts'
 import math from '../../stuff/math.js'
 
 import layout_fn from './layout_fn.js'

@@ -2,7 +2,7 @@
 // Script engine, Fuck yeah
 
 import ScriptEnv from './script_env.js'
-import Utils from '../stuff/utils.js'
+import Utils from '../stuff/utils.ts'
 import * as u from './script_utils.js'
 import symstd from './symstd.js'
 import TS from './script_ts.js'

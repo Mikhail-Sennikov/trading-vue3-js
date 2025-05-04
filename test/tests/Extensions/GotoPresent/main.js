@@ -3,7 +3,7 @@
 // handles events, serves as a hub between different
 // widgets/components
 
-import Utils  from  '../../../../src/stuff/utils.js'
+import Utils  from '../../../../src/stuff/utils.ts'
 import EventBus from './event_bus.js'
 import Button from './Button.vue'
 

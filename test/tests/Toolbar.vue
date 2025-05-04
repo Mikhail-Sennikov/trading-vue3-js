@@ -12,7 +12,7 @@
 <script>
 import TradingVue from '../../src/TradingVue.vue'
 import Data from '../data/data_tools.json'
-import Utils from '../../src/stuff/utils.js'
+import Utils from '../../src/stuff/utils.ts'
 import DataCube from '../../src/helpers/datacube.js'
 
 export default {

@@ -37,7 +37,7 @@
 
 <script>
 
-import Const from './stuff/constants.js'
+import Const from './stuff/constants.ts'
 import Chart from './components/Chart.vue'
 import Toolbar from './components/Toolbar.vue'
 import Widgets from './components/Widgets.vue'
@@ -155,7 +155,7 @@ export default {
             default: function () { return [] }
         },
         // Overwrites ChartConfig values,
-        // see constants.js
+        // see constants.ts
         chartConfig: {
             type: Object,
             default: function () { return {} }

@@ -1,7 +1,7 @@
 
 // DataCube event handlers
 
-import Utils from '../stuff/utils.js'
+import Utils from '../stuff/utils.ts'
 import Icons from '../stuff/icons.json'
 import WebWork from './script_ww_api.js'
 import Dataset from './dataset.js'

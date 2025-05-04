@@ -2,7 +2,6 @@
 // Main DataHelper class. A container for data,
 // which works as a proxy and CRUD interface
 
-import Utils from '../stuff/utils.js'
 import DCCore from './dc_core.js'
 import SettProxy from './sett_proxy.js'
 import AggTool from './agg_tool.js'

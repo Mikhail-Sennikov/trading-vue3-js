@@ -1,7 +1,7 @@
 
 // DataCube "private" methods
 
-import Utils from '../stuff/utils.js'
+import Utils from '../stuff/utils.ts'
 import DCEvents from './dc_events.js'
 import Dataset from './dataset.js'
 

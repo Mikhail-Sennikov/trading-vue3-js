@@ -3,7 +3,7 @@
 
 // Compiled webworker (see webpack/ww_plugin.js)
 import worker_data from './tmp/ww$$$.json'
-import Utils from '../stuff/utils.js'
+import Utils from '../stuff/utils.ts'
 import lz from 'lz-string'
 import {} from './script_ww.js' // For webworker-loader to find the ww
 

@@ -1,7 +1,7 @@
 <script>
 
 import Crosshair from './js/crosshair.js'
-import Utils from '../stuff/utils.js'
+import Utils from '../stuff/utils.ts'
 
 export default {
     name: 'Crosshair',

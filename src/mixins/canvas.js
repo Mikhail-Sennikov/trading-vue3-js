@@ -1,7 +1,7 @@
 // Interactive canvas-based component
 // Should implement: mousemove, mouseout, mouseup, mousedown, click
 
-import Utils from '../stuff/utils.js'
+import Utils from '../stuff/utils.ts'
 
 export default {
     methods: {

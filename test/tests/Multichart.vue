@@ -12,7 +12,7 @@
 <script>
 import Chartbox from './Multichart/Chartbox.vue'
 import Data from '../data/data_tf.json'
-import Utils from '../../src/stuff/utils.js'
+import Utils from '../../src/stuff/utils.ts'
 
 // TODO: investigate chart-disappearing problem
 

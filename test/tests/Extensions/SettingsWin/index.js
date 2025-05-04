@@ -8,7 +8,7 @@
 // experiment: 'npm run compile'
 
 import SettingsWin from '../../src/extensions/settings-win/SettingsWin.vue'
-import Main from '../../src/extensions/settings-win/main.js'
+import Main from '../../src/extensions/settings-win/main.ts'
 Main.__name__ = 'settings-win'
 
 const widgets = { SettingsWin }

@@ -6,7 +6,7 @@
 // So it's better to calc all in one place.
 
 import GridMaker from './grid_maker.js'
-import Utils from '../../stuff/utils.js'
+import Utils from '../../stuff/utils.ts'
 import math from '../../stuff/math.js'
 import log_scale from './log_scale.js'
 

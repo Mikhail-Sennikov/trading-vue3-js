@@ -2,7 +2,7 @@
 // Usuful stuff for creating tools. Include as mixin
 
 import Keys from '../stuff/keys.js'
-import Utils from '../stuff/utils.js'
+import Utils from '../stuff/utils.ts'
 
 export default {
     methods: {

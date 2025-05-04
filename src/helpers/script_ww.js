@@ -2,7 +2,7 @@
 // Web-worker
 
 import se from './script_engine.js'
-import Utils from '../stuff/utils.js'
+import Utils from '../stuff/utils.ts'
 import * as u from './script_utils.js'
 import { DatasetWW } from './dataset.js'
 
